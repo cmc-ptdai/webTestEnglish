@@ -1,0 +1,41 @@
+
+.header {
+  &__title {
+    background-color: #174873;
+    color: #fff;
+    &__content {
+      width: 80%;
+      margin: auto;
+      height: 30px;
+      line-height: 30px;
+      &--email {
+        text-align: right;
+      }
+    }
+  }
+  &__content {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    &--logo {
+      font-size: 40px;
+    }
+    &--menu {
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      line-height: 80px;
+    }
+    .nav {
+      &-link {
+        padding: 20px 10px !important;
+        display: inline;
+        transition: all 0.3s ease;
+        &:hover {
+          color: darkorange;
+          border-bottom: 3px solid darkorange;
+        }
+      }
+    }
+  }
+}
