@@ -38,6 +38,10 @@ const TakeTest = () => {
           <div className="takeTest__right__question">
             <p className="takeTest__right__question--numberQuestion">câu:</p>
             <p className="takeTest__right__question--question">zxzxzxzxzxzx</p>
+
+            <div className="takeTest__right__question--answer">
+
+            </div>
           </div>
         </div>
       </div>
