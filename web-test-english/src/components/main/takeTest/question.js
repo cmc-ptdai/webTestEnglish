@@ -24,6 +24,7 @@ const Question = ({question,index}) => {
             </div>
           )
         }
+        <p>lol thắng</p>
       </div>
     </>
   )
