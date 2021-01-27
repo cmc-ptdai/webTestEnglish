@@ -17,11 +17,14 @@ const Question = ({question,index}) => {
         {
           question &&
           (
-            <div className="row">
-              <Radio.Group onChange={onChange} value={value}>
+            <Radio.Group onChange={onChange} >
+              <div className="row">
+                <div className="col-6 item"><Radio value={question.answer.a}>{question.answer.a}</Radio></div>
                 <div className="col-6 item"><Radio value={question.answer.b}>{question.answer.b}</Radio></div>
-              </Radio.Group>
-            </div>
+                <div className="col-6 item"><Radio value={question.answer.c}>{question.answer.c}</Radio></div>
+                <div className="col-6 item"><Radio value={question.answer.d}>{question.answer.d}</Radio></div>
+              </div>
+            </Radio.Group>
           )
         }
       </div>

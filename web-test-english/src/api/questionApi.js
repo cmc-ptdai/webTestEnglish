@@ -14,6 +14,10 @@ const questionsApi = {
   fetchQuestionApiByType: (id) => {
     const url=`/questions?type=${id}`
     return axiosClient.get(url)
+  },
+  fetchAccountApi: () => {
+    const url='/account'
+    return axiosClient.get(url)
   }
 }
 

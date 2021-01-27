@@ -20,10 +20,10 @@ const Header = () => {
             <div className="col-8 header__content--menu">
               <ul className="nav">
                 <li className="nav-item">
-                  <a className="nav-link active" href="#">giới thiệu</a>
+                  <a className="nav-link active" href="/">giới thiệu</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">trắc nghiệm</a>
+                  <a className="nav-link" href="/taketest">trắc nghiệm</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">lịch sử thi</a>
@@ -32,7 +32,7 @@ const Header = () => {
                   <a className="nav-link" href="#">đề thi đã lưu</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">thành viên</a>
+                  <a className="nav-link" href="/login">thành viên</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">liên hệ</a>
