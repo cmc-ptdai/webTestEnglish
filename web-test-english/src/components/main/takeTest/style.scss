@@ -1,9 +1,26 @@
 .takeTest {
   &__left {
+    &__start {
+      border: 1px solid #ccc;
+      padding: 10px;
+      &--title {
+        color: #00a678;
+        font-size: 21px;
+        text-align: center;
+      }
+      &--time {
+        color: red;
+        font-size: 25px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: 10px;
+      }
+    }
     &__information {
       border: 1px solid #ccc;
       padding: 10px;
       color: #428bca;
+      margin-top: 15px;
       &--title {
         color: #00a678;
         font-size: 21px;
@@ -106,6 +123,33 @@
       border: 1px solid #ccc;
       border-radius: 10px;
       padding: 10px;
+      &--numberQuestion {
+        color: red;
+        font-weight: 700;
+      }
+
+      &--question {
+        margin-top: 10px;
+        font-weight: 700;
+      }
+
+      &--answer {
+        margin-top: 20px;
+        .item {
+          margin-top: 20px;
+        }
+      }
+    }
+    &__listQuestion {
+      text-align: center;
+      margin-top: 20px;
+      button {
+        margin-right: 5px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+      }
     }
   }
 }
