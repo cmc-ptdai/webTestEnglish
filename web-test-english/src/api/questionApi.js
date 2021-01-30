@@ -1,4 +1,3 @@
-import axios from 'axios'
 import axiosClient from './axiosClient'
 
 // const fetchQuestionApi = () => {
@@ -7,8 +6,8 @@ import axiosClient from './axiosClient'
 // }
 
 const questionsApi = {
-  fetchQuestionApi: () => {
-    const url='/questions'
+  fetchQuestionApi: (prams) => {
+    const url=`/${prams}`
     return axiosClient.get(url)
   },
   fetchQuestionApiByType: (id) => {

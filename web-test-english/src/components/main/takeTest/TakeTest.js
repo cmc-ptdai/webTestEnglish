@@ -2,58 +2,205 @@ import React, { useEffect, useState } from 'react'
 import './style.scss'
 import questionsApi from '../../../api/questionApi'
 import Question from './question'
+import { Tabs } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import {getQuestion as getQuestionAction,
+  getQuestionFillOut as getQuestionFillOutAction
+} from '../../../redux/actions/questionAction'
+import FormFillOut from './formTestFillOut/FormFillOut'
+import ChangeSentence from './changesentence/ChangeSentence'
+
+
+const { TabPane } = Tabs;
 
 const TakeTest = () => {
-  const [listQuestions, setListQuestions] = useState([])
-  const [arrQuestion, setArrQuestion] = useState([])
-  const [start, setStart] = useState(false)
-  const [question, setQuestion] = useState('')
-  const [index, setIndex] = useState('')
+  const dispatch = useDispatch()
+  const listQuestions = useSelector(store => store.questionReducer.listQuestionsTrueFalse)
+  const arrQuestionFillOut = useSelector(store => store.questionReducer.listQuestionsFillOut)
+  const [listChangeSentence, setListChangeSentence] = useState([])
 
-  const randomQuestion = () => {
-    let listQuestion = []
-    while(listQuestion.length < 10) {
-      const question = Math.floor(Math.random() * listQuestions.length )
-      listQuestion.push(listQuestions[question])
-      const arrFilter = listQuestion.filter((item, index) => listQuestion.indexOf(item) === index);
-      listQuestion = arrFilter
+  const [arrQuestion, setArrQuestion] = useState([])
+  const [listAnswerUser, setListAnswerUser] = useState({})
+
+  const [start, setStart] = useState(false)
+  const [answerTrue, setAnswerTrue] = useState(0)
+  const [count, setCount] = useState(0)
+
+  // const timeCountdown = () => {
+  //   const obj = {
+  //     m: 2,
+  //     s: 0
+  //   }
+  //   while(obj.m > 0) {
+  //     // setCountdown({
+  //     //   ...countdown,
+  //     //   m: countdown.m - 1
+  //     // })
+  //     console.log(obj.m - 1);
+  //     obj.m = obj.m - 1
+  //     secondCountdown()
+  //   }
+  //   console.log('a');
+  // }
+
+  // const secondCountdown = () => {
+  //   let second = 10
+  //   console.log('second');
+  //   while(second > 0) {
+  //     setTimeout(() => {
+  //       console.log(second);
+  //     }, 1000);
+  //     second--
+  //     // setCountdown({
+  //     //   ...countdown,
+  //     //   s: second - 1
+  //     // })
+  //   }
+  // }
+
+  const randomQuestion = (arr = []) => {
+    let newArr = []
+    while(newArr.length < 10) {
+      const question = Math.floor(Math.random() * arr.length )
+      newArr.push(arr[question])
+      const arrFilter = newArr.filter((item, index) => (newArr.indexOf(item) === index))
+      newArr = arrFilter
     }
-    setArrQuestion(listQuestion)
+    return newArr
+  }
+
+  const onStart = () => {
+    const listQuestion = randomQuestion(listQuestions)
+    const listQuestionFillOut = randomQuestion(arrQuestionFillOut)
+    const listQuestionChangeSentence = randomQuestion(listChangeSentence)
+    const arr = listQuestion.concat(listQuestionFillOut, listQuestionChangeSentence)
+    setArrQuestion(arr)
     setStart(true)
+    startTimer()
   }
 
   const fetchQuestionApi = async () => {
-    const response = await questionsApi.fetchQuestionApi()
-    setListQuestions(response)
-    console.log(response);
+    const response = await questionsApi.fetchQuestionApi('questions')
+    dispatch(getQuestionAction(response))
+    const questionFillOut = await questionsApi.fetchQuestionApi('formFillOut')
+    dispatch(getQuestionFillOutAction(questionFillOut))
+    const questionChangeSentence = await questionsApi.fetchQuestionApi('changesentence')
+    setListChangeSentence(questionChangeSentence)
   }
 
   useEffect(() => {
     fetchQuestionApi()
   }, [])
 
-  const clickQuestion = (item,index) => {
-    setQuestion(item)
-    setIndex(index)
+
+  const answerUser = (answer, id) => {
+    setListAnswerUser({
+      ...listAnswerUser,
+      [id]: answer
+    })
   }
+  const clickCancel = () => {
+    setStart(false)
+    setListAnswerUser({})
+    setArrQuestion([])
+    setAnswerTrue(0)
+    setListChangeSentence([])
+  }
+
+  const onsubmitTest = () => {
+    let a = 0
+    arrQuestion.forEach(elem => {
+      console.log(elem);
+      if (elem.typeID === 1) {
+        if(elem.correctAnswer === listAnswerUser[elem.id] ) {
+          console.log('1');
+          a ++
+        }
+      }
+      if (elem.typeID === 2 && listAnswerUser[elem.id] ) {
+        const trimCorrectAnswer = elem.correctAnswer.replace(/\s+/g, "")
+        const trimAnswer = listAnswerUser[elem.id].replace(/\s+/g, "")
+        console.log(trimAnswer, trimCorrectAnswer)
+        if(trimAnswer === trimCorrectAnswer) {
+          console.log(2);
+          a++
+        }
+      }
+      if (elem.typeID === 4 && listAnswerUser[elem.id]) {
+        const trimQuestion = elem.correctAnswer.replace(/\s+/g, "")
+        const trimAnswer = listAnswerUser[elem.id].replace(/\s+/g, "")
+        console.log(trimAnswer, trimQuestion);
+        if(trimAnswer === trimQuestion) {
+          console.log(3);
+          a++
+        }
+      }
+    })
+    const diem = Math.round(((10 / arrQuestion.length ) * a) * 100) / 100
+    setAnswerTrue(a)
+    setCount(diem)
+    setStart(false)
+  }
+
+  const callback = (key) => {
+
+  }
+  const [time, setTime] = useState({
+    seconds: 0,
+    minutes: 1
+  })
+  const startTimer = () => {
+    if ( time.minutes >= 0) {
+      let timer = time.minutes
+      let minute = 0
+      let second= 0
+      let count = 59
+     setTimeout(function () {
+          if (count === 59) {
+            minute =  timer - 1
+          }
+          second = count
+          count --
+
+          minute = minute < 10 ? minute : minute;
+          second = second < 10 ? second : second;
+
+          setTime({
+            minutes: minute,
+            seconds: second
+          })
+          if(count < 0 && timer >=0) {
+            count = 59
+          }
+      }, 1000);
+      if(timer < 0) {
+        onsubmitTest()
+      }
+      }
+}
+
+console.log(time);
   return (
     <div className="takeTest">
       <div className="row">
         <div className="col-4 takeTest__left">
           <div className="takeTest__left__start" style={{display: start ? 'block' : 'none'}}>
             <p className="takeTest__left__start--title">thời gian làm bài còn lại</p>
-            <div className="takeTest__left__start--time"><label>Thời gian: </label> <span>15</span> phút</div>
+            <div className="takeTest__left__start--time"><span>15</span></div>
           </div>
 
           <div className="takeTest__left__information">
             <p className="takeTest__left__information--title">tên đề thi</p>
+            <div ><label>Điểm: </label> <span>{count}</span></div>
             <div ><label>Số câu: </label> <span>{arrQuestion.length}</span></div>
+            <div ><label>Số câu làm được: </label> <span>{answerTrue} / {arrQuestion.length}</span></div>
             <div ><label>Thời gian: </label> <span>15</span> phút</div>
           </div>
 
           <div className="takeTest__left__action">
-            <button className="takeTest__left__action--save">Lưu đề thi</button>
-            <button className="takeTest__left__action--start" onClick={randomQuestion}>Bắt đầu làm</button>
+            <button className="takeTest__left__action--submit" onClick={onsubmitTest} style={{display: start ? 'block' : 'none'}}>Nộp bài</button>
+            <button className="takeTest__left__action--start" onClick={onStart} style={{display: start ? 'none' : 'block'}}>Bắt đầu làm</button>
+            <button className="takeTest__left__action--cancel" onClick={clickCancel} style={{display: start ? 'block' : 'none'}}>Huỷ</button>
           </div>
 
           <div className="takeTest__left__shear">
@@ -78,21 +225,29 @@ const TakeTest = () => {
           </div>
 
           <div className="takeTest__right__question" style={{display: start ? 'block' : 'none'}}>
-            <Question
-              question={question}
-              index={index}
-            />
-          </div>
-
-          <div className="takeTest__right__listQuestion">
-            {
-              arrQuestion &&
-              arrQuestion.map((item, index) => {
-                return (
-                  <button key={index} onClick={() => clickQuestion(item,index)}>Câu: {index + 1}</button>
-                )
-              })
-            }
+            <Tabs defaultActiveKey="1" onChange={callback}>
+              <TabPane tab="loại 1" key="1">
+                <Question
+                  arrQuestion={arrQuestion}
+                  answerUser = {answerUser}
+                  listAnswerUser = {listAnswerUser}
+                />
+              </TabPane>
+              <TabPane tab="loại 2" key="2">
+                <FormFillOut
+                  arrQuestion={arrQuestion}
+                  answerUser = {answerUser}
+                  listAnswerUser = {listAnswerUser}
+                />
+              </TabPane>
+              <TabPane tab="loại 3" key="3">
+                <ChangeSentence
+                    arrQuestion={arrQuestion}
+                    answerUser = {answerUser}
+                    listAnswerUser = {listAnswerUser}
+                  />
+              </TabPane>
+            </Tabs>
           </div>
         </div>
       </div>
