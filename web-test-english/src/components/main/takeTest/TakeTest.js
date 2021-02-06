@@ -26,38 +26,6 @@ const TakeTest = () => {
   const [answerTrue, setAnswerTrue] = useState(0)
   const [count, setCount] = useState(0)
 
-  // const timeCountdown = () => {
-  //   const obj = {
-  //     m: 2,
-  //     s: 0
-  //   }
-  //   while(obj.m > 0) {
-  //     // setCountdown({
-  //     //   ...countdown,
-  //     //   m: countdown.m - 1
-  //     // })
-  //     console.log(obj.m - 1);
-  //     obj.m = obj.m - 1
-  //     secondCountdown()
-  //   }
-  //   console.log('a');
-  // }
-
-  // const secondCountdown = () => {
-  //   let second = 10
-  //   console.log('second');
-  //   while(second > 0) {
-  //     setTimeout(() => {
-  //       console.log(second);
-  //     }, 1000);
-  //     second--
-  //     // setCountdown({
-  //     //   ...countdown,
-  //     //   s: second - 1
-  //     // })
-  //   }
-  // }
-
   const randomQuestion = (arr = []) => {
     let newArr = []
     while(newArr.length < 10) {
@@ -76,7 +44,6 @@ const TakeTest = () => {
     const arr = listQuestion.concat(listQuestionFillOut, listQuestionChangeSentence)
     setArrQuestion(arr)
     setStart(true)
-    startTimer()
   }
 
   const fetchQuestionApi = async () => {
@@ -145,48 +112,13 @@ const TakeTest = () => {
   const callback = (key) => {
 
   }
-  const [time, setTime] = useState({
-    seconds: 0,
-    minutes: 1
-  })
-  const startTimer = () => {
-    if ( time.minutes >= 0) {
-      let timer = time.minutes
-      let minute = 0
-      let second= 0
-      let count = 59
-     setTimeout(function () {
-          if (count === 59) {
-            minute =  timer - 1
-          }
-          second = count
-          count --
-
-          minute = minute < 10 ? minute : minute;
-          second = second < 10 ? second : second;
-
-          setTime({
-            minutes: minute,
-            seconds: second
-          })
-          if(count < 0 && timer >=0) {
-            count = 59
-          }
-      }, 1000);
-      if(timer < 0) {
-        onsubmitTest()
-      }
-      }
-}
-
-console.log(time);
   return (
     <div className="takeTest">
       <div className="row">
         <div className="col-4 takeTest__left">
           <div className="takeTest__left__start" style={{display: start ? 'block' : 'none'}}>
-            <p className="takeTest__left__start--title">thời gian làm bài còn lại</p>
-            <div className="takeTest__left__start--time"><span>15</span></div>
+            <p className="takeTest__left__start--title">thời gian làm bài</p>
+            <div className="takeTest__left__start--time"><span>15 phút</span></div>
           </div>
 
           <div className="takeTest__left__information">
