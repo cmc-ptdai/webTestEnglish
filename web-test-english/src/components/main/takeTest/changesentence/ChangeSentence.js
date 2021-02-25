@@ -1,16 +1,22 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const ChangeSentence = ({arrQuestion,answerUser,listAnswerUser}) => {
   const [index, setIndex] = useState('')
   const [question, setQuestion] = useState('')
+
   const onHandleInput = e => {
     answerUser(e.target.value, question.id)
-    console.log(e.target.value);
   }
   const clickQuestion = (item,index) => {
     setQuestion(item)
     setIndex(index)
   }
+
+  useEffect(() => {
+    setIndex('')
+    setQuestion('')
+  },[arrQuestion])
+
   return (
     <>
       {
@@ -21,13 +27,13 @@ const ChangeSentence = ({arrQuestion,answerUser,listAnswerUser}) => {
         {
           question && (
             <>
-              <p>{question.question}</p>
-              <span key={index}><input
+              <span>{question.question}</span>
+              <input
                 type="text"
                 value={listAnswerUser[question.id] ? listAnswerUser[question.id] : ''}
                 onChange={onHandleInput}
                 className="questionChangeSentence"
-              /></span>
+              />
             </>
           )
         }

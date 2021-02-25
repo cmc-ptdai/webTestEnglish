@@ -1,7 +1,7 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Radio } from 'antd';
 
-const Question = ({arrQuestion,answerUser,listAnswerUser}) => {
+const QuestionSynonyms = ({arrQuestion,answerUser,listAnswerUser}) => {
   const [value, setValue] = useState(null);
   const [index, setIndex] = useState('')
   const [question, setQuestion] = useState('')
@@ -20,18 +20,33 @@ const Question = ({arrQuestion,answerUser,listAnswerUser}) => {
     setQuestion(item)
     setIndex(index)
   }
-
   return (
     <>
       {
-        arrQuestion &&
-        <p className="takeTest__right__question--numberQuestion">Câu hỏi: {index + 1} </p>
+        question &&
+        <p className="takeTest__right__question--numberQuestion">Câu hỏi {index + 1}: điền vào chỗ trống</p>
       }
-      <p className="takeTest__right__question--question">{question.question}</p>
-
+      <p className="takeTest__right__question--question">
+        {
+          question && (
+            <span>{
+              question.question.map((item, index) => {
+                if (index === 1) {
+                  return (
+                    <b key={index} className="takeTest__right__question--bold"> {item} </b>
+                  )
+                }
+                return (
+                  <span key={index}>{item}</span>
+                )
+              })
+            }</span>
+          )
+        }
+      </p>
       <div className="takeTest__right__question--answer">
         {
-          question && question.typeID === 1 &&
+          question && question.typeID === 3 &&
           (
             <Radio.Group onChange={onChange} value={listAnswerUser[question.id] ? listAnswerUser[question.id] : value} >
               <div className="row">
@@ -48,7 +63,7 @@ const Question = ({arrQuestion,answerUser,listAnswerUser}) => {
         {
           arrQuestion &&
           arrQuestion.map((item, index) => {
-            if(item.typeID === 1) {
+            if(item.typeID === 3) {
               return (
                 <button key={index} onClick={() => clickQuestion(item,index)}>Câu: {index + 1}</button>
               )
@@ -60,4 +75,4 @@ const Question = ({arrQuestion,answerUser,listAnswerUser}) => {
   )
 }
 
-export default Question
+export default QuestionSynonyms

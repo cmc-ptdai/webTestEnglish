@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 
 const FormFillOut = ({arrQuestion,answerUser,listAnswerUser}) => {
   const [index, setIndex] = useState('')
@@ -11,11 +11,17 @@ const FormFillOut = ({arrQuestion,answerUser,listAnswerUser}) => {
     setQuestion(item)
     setIndex(index)
   }
+
+  useEffect(() => {
+    setIndex('')
+    setQuestion('')
+  },[arrQuestion])
+
   return (
     <>
       {
         question &&
-        <p className="takeTest__right__question--numberQuestion">Câu hỏi {index + 1}: điền vào chỗ trống</p>
+        <p className="takeTest__right__question--numberQuestion">Câu hỏi {index + 1}:<span>điền vào chỗ trống</span></p>
       }
       <p className="takeTest__right__question--question">
         {

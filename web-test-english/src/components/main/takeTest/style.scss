@@ -1,4 +1,7 @@
 .takeTest {
+  .audio {
+    outline: none;
+  }
   &__left {
     &__start {
       border: 1px solid #ccc;
@@ -165,6 +168,21 @@
         .item {
           margin-top: 20px;
         }
+        .img {
+          img {
+            width: 150px;
+            height: 130px;
+          }
+          input {
+            width: 150px;
+            margin-top: 15px;
+          }
+        }
+      }
+      &--bold {
+        font-size: 17px;
+        font-weight: 800;
+        color: red;
       }
     }
     &__listQuestion {
