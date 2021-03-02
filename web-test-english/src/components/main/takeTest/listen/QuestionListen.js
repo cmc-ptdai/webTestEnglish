@@ -39,7 +39,6 @@ const QuestionListen = ({arrQuestion,answerUser,listAnswerUser}) => {
   }
 
 
-  console.log(listAnswer);
 
   const clickQuestion = (item,index) => {
     setQuestion(item)
@@ -53,7 +52,6 @@ const QuestionListen = ({arrQuestion,answerUser,listAnswerUser}) => {
     setListAnswer({})
   },[arrQuestion])
 
-  console.log(question);
 
   return (
     <>
@@ -82,7 +80,7 @@ const QuestionListen = ({arrQuestion,answerUser,listAnswerUser}) => {
                 <img src={question.answer.a} alt='imgA'/>
                 <input
                   type="text"
-                  value={listAnswerUser[question.id] ? listAnswerUser[question.id].a ? listAnswerUser[question.id].a : '' : ''}
+
                   onChange={onHandleInputA}
                 />
               </div>
@@ -90,7 +88,7 @@ const QuestionListen = ({arrQuestion,answerUser,listAnswerUser}) => {
                 <img src={question.answer.b} alt='imgB'/>
                 <input
                   type="text"
-                  value={listAnswerUser[question.id] ? listAnswerUser[question.id].b : ''}
+
                   onChange={onHandleInputB}
                 />
               </div>
@@ -98,7 +96,7 @@ const QuestionListen = ({arrQuestion,answerUser,listAnswerUser}) => {
                 <img src={question.answer.c} alt='imgC'/>
                 <input
                   type="text"
-                  value={listAnswerUser[question.id] ? listAnswerUser[question.id].c : ''}
+
                   onChange={onHandleInputC}
                 />
               </div>
@@ -106,7 +104,7 @@ const QuestionListen = ({arrQuestion,answerUser,listAnswerUser}) => {
                 <img src={question.answer.d} alt='imgD'/>
                 <input
                   type="text"
-                  value={listAnswerUser[question.id] ? listAnswerUser[question.id].d : ''}
+
                   onChange={onHandleInputD}
                 />
               </div>

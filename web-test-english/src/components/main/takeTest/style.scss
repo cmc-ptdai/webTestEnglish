@@ -178,6 +178,16 @@
             margin-top: 15px;
           }
         }
+        .read {
+          margin-top: 15px;
+          input {
+            width: 350px;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            outline: none;
+          }
+        }
       }
       &--bold {
         font-size: 17px;
