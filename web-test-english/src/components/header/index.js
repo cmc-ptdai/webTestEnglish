@@ -32,7 +32,7 @@ const Header = () => {
                   <a className="nav-link" href="#">đề thi đã lưu</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">thành viên</a>
+                  <a className="nav-link" href="#">Tạo đề thi</a>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">liên hệ</a>
