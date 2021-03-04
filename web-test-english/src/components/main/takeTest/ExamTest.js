@@ -1,24 +1,28 @@
-  import React, { useEffect, useState } from 'react'
-  import './style.scss'
-  import questionsApi from '../../../api/questionApi'
-  import Question from './question'
-  import { Tabs } from 'antd';
-  import { useDispatch, useSelector } from 'react-redux';
-  import {
-    getQuestion as getQuestionAction,
-    getQuestionFillOut as getQuestionFillOutAction
-  } from '../../../redux/actions/questionAction'
-  import FormFillOut from './formTestFillOut/FormFillOut'
-  import ChangeSentence from './changesentence/ChangeSentence'
-  import QuestionListen from './listen/QuestionListen'
-  import QuestionSynonyms from './synonyms/QuestionSynonyms'
-  import QuestionRead from './readAndAnswer/ReadAndAnswer'
-  import SelectASuitableWork from './SelectASuitableWork/SelectASuitableWork'
+// eslint-disable-next-line
+import React, { useEffect, useState } from 'react'
+import './style.scss'
+import questionsApi from '../../../api/questionApi'
+import Question from './question'
+import { Tabs } from 'antd';
+import { useDispatch, useSelector } from 'react-redux';
+import {
+  getQuestion as getQuestionAction,
+  getQuestionFillOut as getQuestionFillOutAction
+} from '../../../redux/actions/questionAction'
+import FormFillOut from './formTestFillOut/FormFillOut'
+import ChangeSentence from './changesentence/ChangeSentence'
+import QuestionListen from './listen/QuestionListen'
+import QuestionSynonyms from './synonyms/QuestionSynonyms'
+import QuestionRead from './readAndAnswer/ReadAndAnswer'
+import SelectASuitableWork from './SelectASuitableWork/SelectASuitableWork'
 
   const { TabPane } = Tabs;
 
   const TakeTest = () => {
     const dispatch = useDispatch()
+
+    const examTest = useSelector(store => store.questionReducer.listQuestionExamTest)
+    console.log(examTest);
 
     const listQuestions = useSelector(store => store.questionReducer.listQuestionsTrueFalse)
     const arrQuestionFillOut = useSelector(store => store.questionReducer.listQuestionsFillOut)
@@ -30,12 +34,55 @@
 
     const [arrQuestion, setArrQuestion] = useState([])
     const [listAnswerUser, setListAnswerUser] = useState({})
-    console.log(listAnswerUser);
 
     const [start, setStart] = useState(false)
     const [answerTrue, setAnswerTrue] = useState(0)
     const [count, setCount] = useState(0)
 
+    const initialPanes = [
+      {
+        title: 'Chọn đáp án đúng',
+        content: Question,
+        key: 'questions',
+        closable: false,
+      },
+      {
+        title: 'Điền vào chỗ trống',
+        content: FormFillOut,
+        key: 'formFillOut',
+        closable: false,
+      },
+      {
+        title: 'Viết lại câu',
+        content: ChangeSentence,
+        key: 'changesentence',
+        closable: false,
+      },
+      {
+        title: 'đọc và trả lời câu hỏi',
+        content: QuestionRead,
+        key: 'readandanswer',
+        closable: false,
+      },
+      {
+        title: 'nghe',
+        content: QuestionListen,
+        key: 'listening',
+        closable: false,
+      },
+      {
+        title: 'Chọn từ để câu không khác nghĩa',
+        content: QuestionSynonyms,
+        key: 'synonyms',
+        closable: false,
+      },
+      {
+        title: 'chon từ phù hợp',
+        content: SelectASuitableWork,
+        key: 'selectasuitableword',
+        closable: false,
+      },
+    ];
 
     const randomQuestion = (arr = [], number) => {
       let newArr = []
@@ -49,13 +96,14 @@
     }
 
     const onStart = () => {
-      const listQuestion = randomQuestion(listQuestions,6)
-      const listQuestionFillOut = randomQuestion(arrQuestionFillOut,6)
-      const listQuestionChangeSentence = randomQuestion(listChangeSentence,5)
-      const listSynonyms = randomQuestion(listQuestionSynonyms,2)
-      const listRead = randomQuestion(listQuestionRead,1)
-      const listSelect = randomQuestion(listQuestionSelect,3)
-      const arr = listQuestion.concat(listQuestionFillOut, listQuestionChangeSentence, listSynonyms, listQuestionListen, listRead,  listSelect)
+      const listQuestion = randomQuestion(listQuestions,examTest.questions)
+      const listQuestionFillOut = randomQuestion(arrQuestionFillOut,examTest.formFillOut)
+      const listQuestionChangeSentence = randomQuestion(listChangeSentence,examTest.changesentence)
+      const listSynonyms = randomQuestion(listQuestionSynonyms,examTest.synonyms)
+      const listRead = randomQuestion(listQuestionRead,examTest.readandanswer)
+      const listListen = randomQuestion(listQuestionListen,examTest.listening)
+      const listSelect = randomQuestion(listQuestionSelect,examTest.selectasuitableword)
+      const arr = listQuestion.concat(listQuestionFillOut, listQuestionChangeSentence, listSynonyms, listListen, listRead,  listSelect)
       setArrQuestion(arr)
       setStart(true)
       setCount(0)
@@ -241,7 +289,6 @@
       setListAnswerUser({})
       setArrQuestion([])
     }
-
     const callback = (key) => {
 
     }
@@ -256,11 +303,11 @@
             </div>
 
             <div className="takeTest__left__information">
-              <p className="takeTest__left__information--title">tên đề thi</p>
+              <p className="takeTest__left__information--title">{examTest.name}</p>
               <div ><label>Điểm: </label> <span>{count}</span></div>
               <div ><label>Số câu: </label> <span>{arrQuestion.length}</span></div>
               <div ><label>Số câu làm được: </label> <span>{answerTrue}</span></div>
-              <div ><label>Thời gian: </label> <span>15</span> phút</div>
+              <div ><label>Thời gian: </label> <span>{examTest.time}</span> phút</div>
             </div>
 
             <div className="takeTest__left__action">
@@ -291,57 +338,29 @@
             </div>
 
             <div className="takeTest__right__question" style={{display: start ? 'block' : 'none'}}>
-              <Tabs defaultActiveKey="1" onChange={callback}>
-                <TabPane tab="Chọn đáp án đúng" key="1">
-                  <Question
-                    arrQuestion={arrQuestion}
-                    answerUser = {answerUser}
-                    listAnswerUser = {listAnswerUser}
-                  />
-                </TabPane>
-                <TabPane tab="Điền vào chỗ trống" key="2">
-                  <FormFillOut
-                    arrQuestion={arrQuestion}
-                    answerUser = {answerUser}
-                    listAnswerUser = {listAnswerUser}
-                  />
-                </TabPane>
-                <TabPane tab="Viết lại câu" key="3">
-                  <ChangeSentence
-                      arrQuestion={arrQuestion}
-                      answerUser = {answerUser}
-                      listAnswerUser = {listAnswerUser}
-                    />
-                </TabPane>
-                <TabPane tab="Chọn từ để câu không khác nghĩa" key="4">
-                  <QuestionSynonyms
-                      arrQuestion={arrQuestion}
-                      answerUser = {answerUser}
-                      listAnswerUser = {listAnswerUser}
-                    />
-                </TabPane>
-                <TabPane tab="Nghe" key="5">
-                  <QuestionListen
-                    arrQuestion={arrQuestion}
-                    answerUser = {answerUser}
-                    listAnswerUser = {listAnswerUser}
-                  />
-                </TabPane>
-                <TabPane tab="đọc và trả lời câu hỏi" key="6">
-                  <QuestionRead
-                    arrQuestion={arrQuestion}
-                    answerUser = {answerUser}
-                    listAnswerUser = {listAnswerUser}
-                  />
-                </TabPane>
-                <TabPane tab="chon từ phù hợp" key="7">
-                  <SelectASuitableWork
-                    arrQuestion={arrQuestion}
-                    answerUser = {answerUser}
-                    listAnswerUser = {listAnswerUser}
-                  />
-                </TabPane>
+              <Tabs defaultActiveKey="1" onChange={callback} >
+              { examTest && (
+                initialPanes.map((item) => {
+                  const a = item.key
+                  const Component = item.content
+                  if (examTest[a] !== 0) {
+                    return (
+                      <TabPane tab={item.title} key={item.key}>
+                        <Component
+                          arrQuestion={arrQuestion}
+                          answerUser = {answerUser}
+                          listAnswerUser = {listAnswerUser}
+                        />
+                      </TabPane>
+                    )
+                  }  else {
+                    return null
+                  }
+                })
+              )
+              }
               </Tabs>
+
             </div>
           </div>
         </div>

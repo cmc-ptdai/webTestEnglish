@@ -55,6 +55,8 @@ const FormFillOut = ({arrQuestion,answerUser,listAnswerUser}) => {
               return (
                 <button key={index} onClick={() => clickQuestion(item,index)}>Câu: {index + 1}</button>
               )
+            } else {
+              return null
             }
           })
         }

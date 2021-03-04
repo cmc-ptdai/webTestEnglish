@@ -1,4 +1,8 @@
-import {GET_QUESTION, GET_QUESTION_FILL_OUT} from '../actionType'
+import {
+  GET_QUESTION,
+  GET_QUESTION_FILL_OUT,
+  SET_QUESTION_EXAM_TEST
+} from '../actionType'
 
 export const getQuestion = (payload) => {
   return {
@@ -13,3 +17,11 @@ export const getQuestionFillOut = (payload) => {
     payload
   }
 }
+
+export const setQuestionExamTest = (payload) => {
+  return {
+    type: SET_QUESTION_EXAM_TEST ,
+    payload
+  }
+}
+

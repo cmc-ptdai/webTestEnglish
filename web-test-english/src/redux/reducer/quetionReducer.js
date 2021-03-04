@@ -1,8 +1,13 @@
-import {GET_QUESTION, GET_QUESTION_FILL_OUT} from '../actionType'
+import {
+  GET_QUESTION,
+  GET_QUESTION_FILL_OUT,
+  SET_QUESTION_EXAM_TEST
+} from '../actionType'
 
 const initialState = {
   listQuestionsTrueFalse: [],
-  listQuestionsFillOut: []
+  listQuestionsFillOut: [],
+  listQuestionExamTest: []
 }
 
 const questionReducer = (state = initialState, action) => {
@@ -17,6 +22,12 @@ const questionReducer = (state = initialState, action) => {
       return {
         ...state,
         listQuestionsFillOut: action.payload
+      }
+    }
+    case SET_QUESTION_EXAM_TEST : {
+      return {
+        ...state,
+        listQuestionExamTest: action.payload
       }
     }
     default:
