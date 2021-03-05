@@ -1,0 +1,1123 @@
+{
+	"account": [
+	{
+		"id": 1,
+		"role": "admin",
+		"username": "admin",
+		"password": "12345",
+		"email": "admin123@gmail.com"
+	},
+	{
+		"id": 2,
+		"role": "user",
+		"username": "thang",
+		"password": "thang",
+		"email": "thangminhhoang98@gmail.com",
+		"fullname": "Hoàng Minh Thắng"
+	},
+	{
+		"id": 3,
+		"role": "user",
+		"username": "dai",
+		"password": "dai",
+		"email": "thangminhhoang98@gmail.com",
+		"fullname": "Phùng Thế Đại"
+	},
+	{
+		"role": "user",
+		"username": "ấi",
+		"password": "ahaha",
+		"email": "ahahhaha",
+		"fullname": "akakakak",
+		"id": 4
+	},
+	{
+		"role": "user",
+		"username": "ấi",
+		"password": "ahaha",
+		"email": "ahahhaha",
+		"fullname": "akakakak",
+		"id": 5
+	}
+	],
+	"type": [
+	{
+		"id": 1,
+		"type": "Trắc nghiệm"
+	},
+	{
+		"id": 2,
+		"type": "Điểm khuyết"
+	},
+	{
+		"id": 3,
+		"type": "từ trái nghĩa"
+	},
+	{
+		"id": 4,
+		"type": "chuyển câu"
+	},
+	{
+		"id": 5,
+		"type": "nghe"
+	},
+	{
+		"id": 6,
+		"type": "đọc"
+	},
+	{
+		"id": 7,
+		"type": "chọn từ"
+	}
+	],
+	"level" : [
+	{
+		"id": 1,
+		"type": "Lớp 1"
+	},
+	{
+		"id": 2,
+		"type": "Lớp 2"
+	},
+	{
+		"id": 3,
+		"type": "Lớp 3"
+	},
+	{
+		"id": 4,
+		"type": "Lớp 4"
+	},
+	{
+		"id": 5,
+		"type": "Lớp 5"
+	},
+	{
+		"id": 6,
+		"type": "Lớp 6"
+	},
+	{
+		"id": 7,
+		"type": "Lớp 7"
+	},
+	{
+		"id": 8,
+		"type": "Lớp 8"
+	},
+	{
+		"id": 9,
+		"type": "Lớp 9"
+	},
+	{
+		"id": 10,
+		"type": "Lớp 10"
+	},
+	{
+		"id": 11,
+		"type": "Lớp 11"
+	},
+	{
+		"id": 12,
+		"type": "Lớp 12"
+	}
+	],
+	"questions": [
+		{
+		"id": 1,
+		"typeID": 1,
+		"level" : 1,
+		"question": "He told me that he_____a trip to California the following week",
+		"correctAnswer": "would take ",
+		"answer": {
+			"a": "will take",
+			"b": "took",
+			"c": "would take",
+			"d": "had taken"
+		}
+		},
+		{
+		"id": 2,
+		"typeID": 1,
+		"level" : 2,
+		"question": "I couldn’t cut the grass because the lawn mower______ a few days previously.",
+		"correctAnswer": "had broken down",
+		"answer": {
+			"a": "broke down",
+			"b": "has been broken",
+			"c": "had broken down",
+			"d": "breaks down"
+		}
+		},
+		{
+		"id": 3,
+		"typeID": 1,
+		"level" : 3,
+		"question": "The football match was postponed ______ the bad weather.",
+		"correctAnswer": "because of",
+		"answer": {
+			"a": "despite",
+			"b": "in spite",
+			"c": "because",
+			"d": "because of"
+		}
+		},
+		{
+		"id": 4,
+		"typeID": 1,
+		"level" : 4,
+		"question": "______ students attended the meeting that there weren't enough chairs for all of them.",
+		"correctAnswer": "So many",
+		"answer": {
+			"a": "Too many",
+			"b": "So few",
+			"c": "So many",
+			"d": "So much"
+		}
+		},
+		{
+		"id": 6,
+		"typeID": 1,
+		"level" : 5,
+		"question": "Endangered species ______ by the World Wildlife Fund.",
+		"correctAnswer": "are protected",
+		"answer": {
+			"a": "are protected",
+			"b": "would protect",
+			"c": "be protected",
+			"d": "will protect"
+		}
+		},
+		{
+		"id": 7,
+		"typeID": 1,
+		"level" : 6,
+		"question": "Maria: \"Thanks for the lovely evening.\" \n Diana: \"______.\" ",
+		"correctAnswer": "I'm glad you enjoyed it",
+		"answer": {
+			"a": "No, it's not good",
+			"b": "Oh, that's right",
+			"c": "Yes, it's really great",
+			"d": "I'm glad you enjoyed it"
+		}
+		},
+		{
+		"id": 8,
+		"typeID": 1,
+		"level" : 7,
+		"question": "High school students should be ______ for their future jobs before leaving school.",
+		"correctAnswer": "well-prepared",
+		"answer": {
+			"a": "ill-spoken",
+			"b": "well-prepared",
+			"c": "ill-prepared",
+			"d": "well-spoken"
+		}
+		},
+		{
+		"id": 10,
+		"typeID": 1,
+		"level" : 8,
+		"question": "She didn't want to go ______ she knew all her friends would be there.",
+		"correctAnswer": "even though",
+		"answer": {
+			"a": "even though",
+			"b": "therefore",
+			"c": "so that",
+			"d": "wherever"
+		}
+		},
+		{
+		"id": 11,
+		"typeID": 1,
+		"level" : 9,
+		"question": "If I had the map now, I ______ a short-cut across the desert.",
+		"correctAnswer": "could take",
+		"answer": {
+			"a": "could take",
+			"b": "take",
+			"c": "could have taken",
+			"d": "can take"
+		}
+		},
+		{
+		"id": 12,
+		"typeID": 1,
+		"level" : 10,
+		"question": "I first met her two years ago when we ______ at Oxford University.",
+		"correctAnswer": "were studying",
+		"answer": {
+			"a": "were studying",
+			"b": "are studying",
+			"c": "had been studying",
+			"d": "have been studying"
+		}
+		},
+		{
+		"id": 14,
+		"typeID": 1,
+		"level" : 3,
+		"question": "He went back to work in his country after he ______ his course on Advanced Engineering in London.",
+		"correctAnswer": "had finished",
+		"answer": {
+			"a": "has finished ",
+			"b": "had finished",
+			"c": "was finishing",
+			"d": "finishes"
+		}
+		},
+		{
+		"id": 15,
+		"typeID": 1,
+		"level" : 12,
+		"question": "Ellen: \"______?\" \n Tom: \"He's tall and thin with blue eyes.\"",
+		"correctAnswer": "What does John look like",
+		"answer": {
+			"a": "What does John look like",
+			"b": "What does John like",
+			"c": "How is John doing",
+			"d": "Who does John look like"
+		}
+		},
+		{
+		"id": 17,
+		"typeID": 1,
+		"level" : 11,
+		"question": "My father decided to ______ smoking after he had been smoking for ten years.",
+		"correctAnswer": "give up",
+		"answer": {
+			"a": "take up",
+			"b": "get over",
+			"c": "give up",
+			"d": "put away"
+		}
+		},
+		{
+		"id": 18,
+		"typeID": 1,
+		"level" : 2,
+		"question": "After I_______T.V, I went to bed.",
+		"correctAnswer": "had watched",
+		"answer": {
+			"a": "had watched",
+			"b": "watching",
+			"c": "watched",
+			"d": "watch"
+		}
+		},
+		{
+		"id": 19,
+		"typeID": 1,
+		"level" : 1,
+		"question": "She_______English for 5 years.",
+		"correctAnswer": "has studied",
+		"answer": {
+			"a": "has studied",
+			"b": "has studying",
+			"c": "study",
+			"d": "to study"
+		}
+		},
+		{
+		"id": 20,
+		"typeID": 1,
+		"level" : 3,
+		"question": "If I had worked harder, I_______the exam.",
+		"correctAnswer": "would have passed",
+		"answer": {
+			"a": "will pass",
+			"b": "would passed",
+			"c": "passed",
+			"d": "would have passed"
+		}
+		},
+		{
+		"id": 21,
+		"typeID": 1,
+		"level" : 4,
+		"question": [
+			"I’m sure she",
+			"you the truth if she knows it."
+		],
+		"correctAnswer": "will tell",
+		"answer": {
+			"a": "will tell",
+			"b": "would tell",
+			"c": "where",
+			"d": "whose"
+		}
+		},
+		{
+		"id": 23,
+		"typeID": 1,
+		"level" : 5,
+		"question": [
+			"When he got home, he found that his bike,_______"
+		],
+		"correctAnswer": "had been stolen.",
+		"answer": {
+			"a": "had been stolen.",
+			"b": "had stolen.",
+			"c": "stole.",
+			"d": "has been stolen."
+		}
+		},
+		{
+		"id": 24,
+		"typeID": 1,
+		"level" : 6,
+		"question": "John said that he_______for the job",
+		"correctAnswer": "would apply",
+		"answer": {
+			"a": "will apply",
+			"b": "would apply",
+			"c": "is applying",
+			"d": "to apply"
+		}
+		},
+		{
+		"id": 32,
+		"typeID": 1,
+		"level" : 7,
+		"question": "Lots of houses_______by the earthquake.",
+		"correctAnswer": "were destroyed",
+		"answer": {
+			"a": "are destroying",
+			"b": "destroyed",
+			"c": "were destroying",
+			"d": "were destroyed"
+		}
+		},
+		{
+		"id": 36,
+		"typeID": 1,
+		"level" : 8,
+		"question": "- John: You look great in this new hat! \n - Jane: _______",
+		"correctAnswer": "I am glad you like it.",
+		"answer": {
+			"a": "I don’t like you say so.",
+			"b": "Thank you too much.",
+			"c": "Not at all.",
+			"d": "I am glad you like it."
+		}
+		},
+		{
+		"id": 37,
+		"typeID": 1,
+		"level" : 9,
+		"question": "- Mai: “ Hello! My name’s Mai. Nice to meet you.” \n-Janed: “_______”",
+		"correctAnswer": "I’m Jane. Nice to meet you, too.",
+		"answer": {
+			"a": "Really?",
+			"b": "I’m Jane. Nice to meet you, too.",
+			"c": "I’m fine, thank you.",
+			"d": "Thank you."
+		}
+		},
+		{
+		"id": 39,
+		"typeID": 1,
+		"level" : 10,
+		"question": "I_______Lan since she went abroad.",
+		"correctAnswer": "haven’t met",
+		"answer": {
+			"a": "haven’t met",
+			"b": "wasn’t met",
+			"c": "hadn’t met",
+			"d": "didn’t meet"
+		}
+		},
+		{
+		"id": 40,
+		"typeID": 1,
+		"level" : 11,
+		"question": "- John: “ How do you get here?” \n - Tam: “_______”",
+		"correctAnswer": "I come here by train.",
+		"answer": {
+			"a": "She comes  here by train.",
+			"b": "On Monday.",
+			"c": "I come here at 8 a.m.",
+			"d": "I come here by train."
+		}
+		},
+		{
+		"id": 43,
+		"typeID": 1,
+		"level" : 12,
+		"question": [
+			"Employers often require that candidates have not only a degree_______"
+		],
+		"correctAnswer": "but also two-year experience",
+		"answer": {
+			"a": "but two years experience",
+			"b": "also two years experience",
+			"c": "but also two-year experience",
+			"d": "but more two years experience"
+		}
+		},
+		{
+		"id": 44,
+		"typeID": 1,
+		"level" : 3,
+		"question": [
+			"Richard Nixon had been a lawyer and",
+			"_______",
+			"before he entered politics."
+		],
+		"correctAnswer": "",
+		"answer": {
+			"a": "served in the Navy as an officer",
+			"b": "an officer in the Navy",
+			"c": "the Navy had him as an officer",
+			"d": "did service in the Navy as an officer"
+		}
+		}
+	],
+	"formFillOut": [
+		{
+		  "id": 25,
+		  "typeID": 2,
+		  "level" : 1,
+		  "question": [
+			"He",
+			"_______",
+			"that he was going to get married."
+		  ],
+		  "correctAnswer": "told me",
+		  "answer": ""
+		},
+		{
+		  "id": 26,
+		  "typeID": 2,
+		  "level" : 2,
+		  "question": [
+			"They have lived in London",
+			"_______",
+			"they were small."
+		  ],
+		  "correctAnswer": "since",
+		  "answer": ""
+		},
+		{
+		  "id": 27,
+		  "typeID": 2,
+		  "level" : 1,
+		  "question": [
+			"The fishermen and their boats",
+			"_______",
+			"were off the coast three days ago have just been reported to be missing."
+		  ],
+		  "correctAnswer": "that",
+		  "answer": ""
+		},
+		{
+		  "id": 28,
+		  "typeID": 2,
+		  "level" : 1,
+		  "question": [
+			"You must put",
+			"_______",
+			"a helmet when riding a motorbike."
+		  ],
+		  "correctAnswer": "On",
+		  "answer": ""
+		},
+		{
+		  "id": 29,
+		  "typeID": 2,
+		  "level" : 4,
+		  "question": [
+			"Vietnam is a",
+			"_______",
+			"country."
+		  ],
+		  "correctAnswer": "developing",
+		  "answer": ""
+		},
+		{
+		  "id": 30,
+		  "typeID": 2,
+		  "level" : 3,
+		  "question": [
+			"A person who work on the farm is a ",
+			"_______",
+			""
+		  ],
+		  "correctAnswer": "farmer",
+		  "answer": ""
+		},
+		{
+		  "id": 31,
+		  "typeID": 2,
+		  "level" : 2,
+		  "question": [
+			"He",
+			"_______",
+			"staying at home"
+		  ],
+		  "correctAnswer": "suggested",
+		  "answer": ""
+		},
+		{
+		  "id": 33,
+		  "typeID": 2,
+		  "level" : 1,
+		  "question": [
+			"Sometimes it is not",
+			"_______",
+			"to find suitable books for our children."
+		  ],
+		  "correctAnswer": "easy",
+		  "answer": ""
+		},
+		{
+		  "id": 34,
+		  "typeID": 2,
+		  "level" : 5,
+		  "question": [
+			"Do you believe",
+			"_______",
+			"his story?"
+		  ],
+		  "correctAnswer": "in",
+		  "answer": ""
+		},
+		{
+		  "id": 35,
+		  "typeID": 2,
+		  "level" : 1,
+		  "question": [
+			"They insisted",
+			"_______",
+			"going out for lunch."
+		  ],
+		  "correctAnswer": "on",
+		  "answer": ""
+		},
+		{
+		  "id": 38,
+		  "typeID": 2,
+		  "level" : 3,
+		  "question": [
+			"If I",
+			"_______",
+			"enough money, I’ll buy a laptop."
+		  ],
+		  "correctAnswer": "have",
+		  "answer": ""
+		},
+		{
+		  "id": 41,
+		  "typeID": 2,
+		  "level" : 2,
+		  "question": [
+			"The mausoleum is",
+			"_______",
+			"by Thien Thu mountain, two towering columns and a vast expanse of water"
+		  ],
+		  "correctAnswer": "fed",
+		  "answer": ""
+		},
+		{
+		  "id": 42,
+		  "typeID": 2,
+		  "level" : 3,
+		  "question": [
+			"Put plants",
+			"_______",
+			"a window so that they will get enough light."
+		  ],
+		  "correctAnswer": "next to",
+		  "answerUser": ""
+		}
+	],
+	"changesentence": [
+		{
+			"id": 45,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": "I had my nephew paint the gate last week.",
+			"correctAnswer": "I had the gate painted last week."
+		},
+		{
+			"id": 46,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": "She will have Peter wash her car tomorrow.",
+			"correctAnswer": "She will have her car washed tomorrow."
+		},
+		{
+			"id": 47,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": "They have her tell the story again.",
+			"correctAnswer": "They have the story told again."
+		},
+		{
+			"id": 48,
+			"typeID": 4,
+		  	"level" : 3,
+			"question": "John gets his sister to clean his shirt.",
+			"correctAnswer": "John gets his shirt cleaned."
+		},
+		{
+			"id": 49,
+			"typeID": 4,
+		  	"level" : 2,
+			"question": "Anne had had a friend type her composition.",
+			"correctAnswer": "Anne has had her composition typed."
+		},
+		{
+			"id": 50,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": "Rick will have a barber cut his hair.Rick will have his hair cut.",
+			"correctAnswer": "I will get the dressmaker to make a new dress.I will get a new dress made."
+		},
+		{
+			"id": 51,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": "He had a mechanic repair his car.",
+			"correctAnswer": "He had his car repaired."
+		},
+		{
+			"id": 52,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": "She often gets the technician to maintain the heater.",
+			"correctAnswer": "She often gets the heater maintained."
+		},
+		{
+			"id": 53,
+			"typeID": 4,
+		  	"level" : 3,
+			"question": "They had the police arrest the shoplifter.",
+			"correctAnswer": "They had the shoplifter arrested."
+		},
+		{
+			"id": 54,
+			"typeID": 4,
+		  	"level" : 1,
+			"question": " I must have the dentist check my teeth.",
+			"correctAnswer": "I must have my teeth checked."
+		},
+		{
+			"id": 55,
+			"typeID": 4,
+		  	"level" : 2,
+			"question": "She will have a veterinary surgeon examine her dog.",
+			"correctAnswer": "She will have her dog examined."
+		},
+		{
+			"id": 56,
+			"typeID": 4,
+		  	"level" : 3,
+			"question": "We had a man take this photograph when we were on holiday last summer.",
+			"correctAnswer": "We had this photograph taken when we were on holiday last summer."
+		},
+		{
+			"id": 57,
+			"typeID": 4,
+		  	"level" : 2,
+			"question": "The Greens had a carpet cleaner clean their carpet.",
+			"correctAnswer": "The Greens had their carpet cleaned."
+		}
+	],
+	"synonyms" : [
+		{
+			"id": 58,
+			"typeID": 3,
+			"level" : 3,
+			"question": ["Never","punish","your children by hitting them. This might teach them to become hitters."],
+			"correctAnswer": "reward",
+			"answer": {
+			  "a": "bring",
+			  "b": "reward",
+			  "c": "give",
+			  "d": "accept"
+			}
+		  },
+		  {
+			"id": 59,
+			"typeID": 3,
+			"level" : 2,
+			"question": ["The first year at university was probably the most","challenging","year of her life, which caused her plenty of troubles."],
+			"correctAnswer": "easy",
+			"answer": {
+			  "a": "tricky",
+			  "b": "tough",
+			  "c": "difficult",
+			  "d": "easy"
+			}
+		  },
+		  {
+			"id": 60,
+			"typeID": 3,
+			"level" : 2,
+			"question": ["In Western culture, it is","polite","to maintain eye contact during conversation."],
+			"correctAnswer": "discourteous",
+			"answer": {
+			  "a": "informal",
+			  "b": "insecure",
+			  "c": "discourteous",
+			  "d": "irresponsible"
+			}
+		  },
+		  {
+			"id": 61,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["There have been","significant","changes in women’s lives since the women’s liberation movement."],
+			"correctAnswer": "unimportant",
+			"answer": {
+			  "a": "controlled",
+			  "b": "political",
+			  "c": "disagreeable",
+			  "d": "unimportant"
+			}
+		  },
+		  {
+			"id": 62,
+			"typeID": 3,
+			"level" : 2,
+			"question": ["Urbanization is the","shift","of people moving from rural to urban areas, and the result is the growth of cities."],
+			"correctAnswer": "maintenance",
+			"answer": {
+			  "a": "movement",
+			  "b": "maintenance",
+			  "c": "variation",
+			  "d": "transposition"
+			}
+		  },
+		  {
+			"id": 63,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["Salish’s point of view was correct but his behavior with his father was quite","impertinent."],
+			"correctAnswer": "respectful",
+			"answer": {
+			  "a": "inadequate",
+			  "b": "smooth",
+			  "c": "healthy",
+			  "d": "respectful"
+			}
+		  },
+		  {
+			"id": 64,
+			"typeID": 3,
+			"level" : 2,
+			"question": ["Telomeres are the tiny caps on the ends of chromosomes that","protect","our DNA from damage during cell division."],
+			"correctAnswer": "attack",
+			"answer": {
+			  "a": "guard",
+			  "b": "shape",
+			  "c": "attack",
+			  "d": "save"
+			}
+		  },
+		  {
+			"id": 65,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["If you say bad things about the person who give a job you","bite the hand that feeds you."],
+			"correctAnswer": "be thankful",
+			"answer": {
+			  "a": "be unfriendly",
+			  "b": "be ungrateful",
+			  "c": "be thankful",
+			  "d": "be devoted"
+			}
+		  },
+		  {
+			"id": 66,
+			"typeID": 3,
+			"level" : 2,
+			"question": ["I prefer","secure","jobs because I don’t like keeping on moving and changing all the time."],
+			"correctAnswer": "challenging",
+			"answer": {
+			  "a": "challenging",
+			  "b": "demanding",
+			  "c": "stable",
+			  "d": "safe"
+			}
+		  },
+		  {
+			"id": 67,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["When he passes the entrance exam, his parents will","be walking on air."],
+			"correctAnswer": "feeling extremely unhappy",
+			"answer": {
+			  "a": "extremely happy",
+			  "b": "extremely light",
+			  "c": "feeling extremely unhappy",
+			  "d": "feeling extremely airy"
+			}
+		  },
+		  {
+			"id": 68,
+			"typeID": 3,
+			"level" : 3,
+			"question": ["Pointing at someone is considered","rude","in communication."],
+			"correctAnswer": "polite",
+			"answer": {
+			  "a": "impolite",
+			  "b": "humorous",
+			  "c": "polite",
+			  "d": "generous"
+			}
+		  },
+		  {
+			"id": 69,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["This point has been dealt with the","preceding","paragraph."],
+			"correctAnswer": "following",
+			"answer": {
+			  "a": "following",
+			  "b": "heading",
+			  "c": "previous",
+			  "d": "before"
+			}
+		  },
+		  {
+			"id": 70,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["The employee’s claim of being out with the flu did not seem very","plausible","because he returned from sick leave with a deep tan."],
+			"correctAnswer": "unreasonable",
+			"answer": {
+			  "a": "tactful",
+			  "b": "vulnerable",
+			  "c": "inattentive",
+			  "d": "unreasonable"
+			}
+		  },
+		  {
+			"id": 71,
+			"typeID": 3,
+			"level" : 2,
+			"question": ["TEFL.com is a website which offers a job research facility to","assist","qualified students in finding work."],
+			"correctAnswer": "hinder",
+			"answer": {
+			  "a": "help",
+			  "b": "aid",
+			  "c": "support",
+			  "d": "hinder"
+			}
+		  },
+		  {
+			"id": 72,
+			"typeID": 3,
+			"level" : 3,
+			"question": ["Several chapters of Joan Steer’s book describe","illegitimate","gambling activities in California in the 1970s."],
+			"correctAnswer": "lawful",
+			"answer": {
+			  "a": "lawful",
+			  "b": "unusual",
+			  "c": "prosperous",
+			  "d": "prohibited"
+			}
+		  },
+		  {
+			"id": 73,
+			"typeID": 3,
+			"level" : 1,
+			"question": ["We","run a very tight ship","here, and we expect all our employees to be at their desks by eight o’clock and take good care of their own business."],
+			"correctAnswer": "organize things inefficiently",
+			"answer": {
+			  "a": "have a good voyage",
+			  "b": "organize things inefficiently",
+			  "c": "feeling extremely airy",
+			  "d": "extremely light"
+			}
+		  },
+		  {
+			"id": 74,
+			"typeID": 3,
+			"level" : 3,
+			"question": ["The US troops are using much more","sophisticated","weapons in the Far East."],
+			"correctAnswer": "simple",
+			"answer": {
+			  "a": "difficult",
+			  "b": "expensive",
+			  "c": "complicated",
+			  "d": "simple"
+			}
+		  }
+	],
+	"listening" : [
+		{
+			"id": 75,
+			"typeID": 5,
+			"level" : 1,
+			"question": "./audio/audio1.mp3",
+			"correctAnswer": {
+				"a": "dai",
+				"b": "the",
+				"c": "phung",
+				"d": "top"
+			},
+			"answer": {
+			  "a": "./imgs/img1.jpg",
+			  "b": "./imgs/img2.jpg",
+			  "c": "./imgs/img3.jpg",
+			  "d": "./imgs/img4.jpg"
+			}
+		},
+		{
+			"id": 78,
+			"typeID": 5,
+			"level" : 2,
+			"question": "./audio/audio1.mp3",
+			"correctAnswer": {
+				"a": "a",
+				"b": "b",
+				"c": "c",
+				"d": "d"
+			},
+			"answer": {
+			  "a": "./imgs/img3.jpg",
+			  "b": "./imgs/img1.jpg",
+			  "c": "./imgs/img4.jpg",
+			  "d": "./imgs/img2.jpg"
+			}
+		}
+	],
+	"readandanswer": [
+		{
+			"id": 79,
+			"typeID": 6,
+			"level" : 1,
+			"question": "This is a photo of my family. This is my father. He’s 40 years old. He’s a doctor. And this is my mother. She’s 35. She’s a doctor, too. These are my brother, Tom and my sister, Mary. Tom’s 10 and Mary’s 7. They’re pupils.",
+			"correctAnswer": {
+				"a": "There are five people in his family.",
+				"b": "He’s 40 years old.",
+				"c": "He’s a doctor",
+				"d": "She’s 35 years old.",
+				"e": "She’s a doctor",
+				"f": "His brother is 10 years old.",
+				"g": "His sister is 7 years old.",
+				"h": "They are pupils."
+			},
+			"answer": {
+			  "a": "How many people are there in his family?",
+			  "b": "How old is his father?",
+			  "c": "What does he do?",
+			  "d": "How old is his mother?",
+			  "e": "What does she do?",
+			  "f": "How old is his brother?",
+			  "g": "How old is his sister?",
+			  "h": "What do they do?"
+			}
+		},
+		{
+			"id": 80,
+			"typeID": 6,
+			"level" : 2,
+			"question": "I live in a house near the sea. It’s an old house, about 100 years old, and it’s very small. There two bedrooms, a livingroom, a bathroom and a kitchen. The bedrooms are upstairs. The bathroom is next to the kitchen. There is a lovely fireplace in the livingroom. There’s a beautiful garden in front of the house. I live with my parents. I play badminton with my father in my free time. We have a lot of fun. I love my house very much.",
+			"correctAnswer": {
+				"a": "His house is near the sea.",
+				"b": "Yes, it is.",
+				"c": "There are five rooms in his house.",
+				"d": "Yes, it is.",
+				"e": "The fireplace is in the living room.",
+				"f": "He lives with his parents.",
+				"g": "He plays badminton with his father in his free time.",
+				"n": "Yes, he does."
+			},
+			"answer": {
+			  "a": "Where is his house?",
+			  "b": "Is it old?",
+			  "c": "How many rooms are there is his house?",
+			  "d": "Is there a garden?",
+			  "e": "Where is the fireplace?",
+			  "f": "Who does he live with?",
+			  "g": "What does he do in his free time?",
+			  "h": "Does he love his house?"
+			}
+		},
+		{
+			"id": 81,
+			"typeID": 6,
+			"level" : 3,
+			"question": "Lan and Lien are classmates. Lan is thin, but Lien isn’t. Lan is tall and pretty. Lien is short but nice. They are both eleven years old. They are in the same class. They are both good students. They are good friends. They often go to school and play together.",
+			"correctAnswer": {
+				"a": "a",
+				"b": "b",
+				"c": "c",
+				"d": "d",
+				"e": "e",
+				"f": "f",
+				"g": "g",
+				"h": "h"
+			},
+			"answer": {
+			  "a": "Who are Lan and Lien?",
+			  "b": "Is Lan thin?",
+			  "c": "Is Lien ugly?",
+			  "d": "Who is nice?",
+			  "e": "How old are they?",
+			  "f": "Are Lan and Lien in different classes?",
+			  "g": "Are they good pupils?",
+			  "h": "What do they often do together?"
+			}
+		}
+	],
+	"selectasuitableword": [
+		{
+			"id": 82,
+			"typeID": 7,
+			"level" : 2,
+			"question": ["He told me that he","_____","a trip to California the following week"],
+			"correctAnswer": "would take ",
+			"answer": ["will take", "took", "would take", "had taken"]
+		  },
+		  {
+			"id": 83,
+			"typeID": 7,
+			"level" : 3,
+			"question": ["I couldn’t cut the grass because the lawn mower","______","a few days previously."],
+			"correctAnswer": "had broken down",
+			"answer": ["broke down", "has been broken", "had broken down", "breaks down"]
+		  },
+		  {
+			"id": 84,
+			"typeID": 7,
+			"level" : 1,
+			"question":["The football match was postponed","______"," the bad weather."],
+			"correctAnswer": "because of",
+			"answer": [
+				"despite",
+				"in spite",
+				"because",
+				"because of"
+			]
+		  },
+		  {
+			"id": 85,
+			"typeID": 7,
+			"level" : 2,
+			"question": ["______","students attended the meeting that there weren't enough chairs for all of them."],
+			"correctAnswer": "So many",
+			"answer": [
+				"Too many",
+				"So few",
+				"So many",
+				"So much"
+			]
+		  },
+		  {
+			"id": 86,
+			"typeID": 7,
+			"level" : 3,
+			"question": ["High school students should be ","______","for their future jobs before leaving school."],
+			"correctAnswer": "well-prepared",
+			"answer": [
+				"ill-spoken",
+				"well-prepared",
+				"will-prepared",
+				"well-spoken"
+			]
+		  }
+	]
+}
