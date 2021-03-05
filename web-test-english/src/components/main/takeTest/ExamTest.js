@@ -22,7 +22,6 @@ import SelectASuitableWork from './SelectASuitableWork/SelectASuitableWork'
     const dispatch = useDispatch()
 
     const examTest = useSelector(store => store.questionReducer.listQuestionExamTest)
-    console.log(examTest);
 
     const listQuestions = useSelector(store => store.questionReducer.listQuestionsTrueFalse)
     const arrQuestionFillOut = useSelector(store => store.questionReducer.listQuestionsFillOut)
@@ -112,29 +111,31 @@ import SelectASuitableWork from './SelectASuitableWork/SelectASuitableWork'
     }
 
     const fetchQuestionApi = async () => {
-      const response = await questionsApi.fetchQuestionApi('questions')
+      const response = await questionsApi.fetchQuestionApiByLevel('questions',examTest.level)
       dispatch(getQuestionAction(response))
 
-      const questionFillOut = await questionsApi.fetchQuestionApi('formFillOut')
+      const questionFillOut = await questionsApi.fetchQuestionApiByLevel('formFillOut',examTest.level)
       dispatch(getQuestionFillOutAction(questionFillOut))
 
-      const questionChangeSentence = await questionsApi.fetchQuestionApi('changesentence')
+      const questionChangeSentence = await questionsApi.fetchQuestionApiByLevel('changesentence',examTest.level)
       setListChangeSentence(questionChangeSentence)
 
-      const questionListen = await questionsApi.fetchQuestionApi('listening')
+      const questionListen = await questionsApi.fetchQuestionApiByLevel('listening',examTest.level)
       setListQuestionListen(questionListen)
 
-      const questionSynonyms = await questionsApi.fetchQuestionApi('synonyms')
+      const questionSynonyms = await questionsApi.fetchQuestionApiByLevel('synonyms',examTest.level)
       setListQuestionSynonyms(questionSynonyms)
 
-      const questionRead = await questionsApi.fetchQuestionApi('readandanswer')
+      const questionRead = await questionsApi.fetchQuestionApiByLevel('readandanswer',examTest.level)
       setListQuestionRead(questionRead)
 
-      const questionSelect = await questionsApi.fetchQuestionApi('selectasuitableword')
+      const questionSelect = await questionsApi.fetchQuestionApiByLevel('selectasuitableword',)
       setListQuestionSelect(questionSelect)
+
     }
 
     useEffect(() => {
+      console.log('a');
       fetchQuestionApi()
        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])

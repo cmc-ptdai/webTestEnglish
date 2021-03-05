@@ -26,7 +26,7 @@ const Menu = () => {
                   <Link className="nav-link" to="/">Tạo đề thi</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to = "/">giới thiệu</Link>
+                  <Link className="nav-link" to = "#">giới thiệu</Link>
                 </li>
               </ul>
             </div>
