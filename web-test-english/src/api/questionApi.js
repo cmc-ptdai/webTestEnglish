@@ -10,8 +10,8 @@ const questionsApi = {
     const url=`/${prams}`
     return axiosClient.get(url)
   },
-  fetchQuestionApiByLevel: (name, level) => {
-    const url=`/${name}?level=${level}`
+  fetchQuestionApiByLevel: (name, level, difficult) => {
+    const url=`/${name}?levelID=${level}&&difficultID=${difficult}`
     return axiosClient.get(url)
   }
 }

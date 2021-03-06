@@ -120,11 +120,26 @@
 		"type": "Lớp 12"
 	}
 	],
+  "difficult" : [
+    {
+      "id": 1,
+      "type": "dễ"
+    },
+    {
+      "id": 2,
+      "type": "trung bình"
+    },
+    {
+      "id": 3,
+      "type": "Khó"
+    }
+  ],
 	"questions": [
 		{
 		"id": 1,
 		"typeID": 1,
-		"level" : 1,
+		"levelID" : 1,
+    "difficultID": 1,
 		"question": "He told me that he_____a trip to California the following week",
 		"correctAnswer": "would take ",
 		"answer": {
@@ -137,7 +152,8 @@
 		{
 		"id": 2,
 		"typeID": 1,
-		"level" : 2,
+		"levelID" : 2,
+    "difficultID": 2,
 		"question": "I couldn’t cut the grass because the lawn mower______ a few days previously.",
 		"correctAnswer": "had broken down",
 		"answer": {
@@ -150,7 +166,8 @@
 		{
 		"id": 3,
 		"typeID": 1,
-		"level" : 3,
+		"levelID" : 3,
+    "difficultID": 3,
 		"question": "The football match was postponed ______ the bad weather.",
 		"correctAnswer": "because of",
 		"answer": {
@@ -163,7 +180,8 @@
 		{
 		"id": 4,
 		"typeID": 1,
-		"level" : 4,
+		"levelID" : 4,
+    "difficultID": 2,
 		"question": "______ students attended the meeting that there weren't enough chairs for all of them.",
 		"correctAnswer": "So many",
 		"answer": {
@@ -176,7 +194,8 @@
 		{
 		"id": 6,
 		"typeID": 1,
-		"level" : 5,
+		"levelID" : 5,
+    "difficultID": 3,
 		"question": "Endangered species ______ by the World Wildlife Fund.",
 		"correctAnswer": "are protected",
 		"answer": {
@@ -189,7 +208,8 @@
 		{
 		"id": 7,
 		"typeID": 1,
-		"level" : 6,
+		"levelID" : 6,
+    "difficultID": 1,
 		"question": "Maria: \"Thanks for the lovely evening.\" \n Diana: \"______.\" ",
 		"correctAnswer": "I'm glad you enjoyed it",
 		"answer": {
@@ -202,7 +222,8 @@
 		{
 		"id": 8,
 		"typeID": 1,
-		"level" : 7,
+		"levelID" : 7,
+    "difficultID": 1,
 		"question": "High school students should be ______ for their future jobs before leaving school.",
 		"correctAnswer": "well-prepared",
 		"answer": {
@@ -215,7 +236,8 @@
 		{
 		"id": 10,
 		"typeID": 1,
-		"level" : 8,
+		"levelID" : 8,
+    "difficultID": 3,
 		"question": "She didn't want to go ______ she knew all her friends would be there.",
 		"correctAnswer": "even though",
 		"answer": {
@@ -228,7 +250,8 @@
 		{
 		"id": 11,
 		"typeID": 1,
-		"level" : 9,
+		"levelID" : 9,
+    "difficultID": 2,
 		"question": "If I had the map now, I ______ a short-cut across the desert.",
 		"correctAnswer": "could take",
 		"answer": {
@@ -241,7 +264,8 @@
 		{
 		"id": 12,
 		"typeID": 1,
-		"level" : 10,
+		"levelID" : 10,
+    "difficultID": 3,
 		"question": "I first met her two years ago when we ______ at Oxford University.",
 		"correctAnswer": "were studying",
 		"answer": {
@@ -254,7 +278,8 @@
 		{
 		"id": 14,
 		"typeID": 1,
-		"level" : 3,
+		"levelID" : 3,
+    "difficultID": 1,
 		"question": "He went back to work in his country after he ______ his course on Advanced Engineering in London.",
 		"correctAnswer": "had finished",
 		"answer": {
@@ -267,7 +292,8 @@
 		{
 		"id": 15,
 		"typeID": 1,
-		"level" : 12,
+		"levelID" : 12,
+    "difficultID": 1,
 		"question": "Ellen: \"______?\" \n Tom: \"He's tall and thin with blue eyes.\"",
 		"correctAnswer": "What does John look like",
 		"answer": {
@@ -280,7 +306,8 @@
 		{
 		"id": 17,
 		"typeID": 1,
-		"level" : 11,
+		"levelID" : 11,
+    "difficultID": 1,
 		"question": "My father decided to ______ smoking after he had been smoking for ten years.",
 		"correctAnswer": "give up",
 		"answer": {
@@ -293,7 +320,8 @@
 		{
 		"id": 18,
 		"typeID": 1,
-		"level" : 2,
+		"levelID" : 2,
+    "difficultID": 2,
 		"question": "After I_______T.V, I went to bed.",
 		"correctAnswer": "had watched",
 		"answer": {
@@ -306,7 +334,8 @@
 		{
 		"id": 19,
 		"typeID": 1,
-		"level" : 1,
+		"levelID" : 1,
+    "difficultID": 3,
 		"question": "She_______English for 5 years.",
 		"correctAnswer": "has studied",
 		"answer": {
@@ -319,7 +348,8 @@
 		{
 		"id": 20,
 		"typeID": 1,
-		"level" : 3,
+		"levelID" : 3,
+    "difficultID": 3,
 		"question": "If I had worked harder, I_______the exam.",
 		"correctAnswer": "would have passed",
 		"answer": {
@@ -332,7 +362,8 @@
 		{
 		"id": 21,
 		"typeID": 1,
-		"level" : 4,
+		"levelID" : 4,
+    "difficultID": 2,
 		"question": [
 			"I’m sure she",
 			"you the truth if she knows it."
@@ -348,7 +379,8 @@
 		{
 		"id": 23,
 		"typeID": 1,
-		"level" : 5,
+		"levelID" : 5,
+    "difficultID": 1,
 		"question": [
 			"When he got home, he found that his bike,_______"
 		],
@@ -363,7 +395,8 @@
 		{
 		"id": 24,
 		"typeID": 1,
-		"level" : 6,
+		"levelID" : 6,
+    "difficultID": 2,
 		"question": "John said that he_______for the job",
 		"correctAnswer": "would apply",
 		"answer": {
@@ -376,7 +409,8 @@
 		{
 		"id": 32,
 		"typeID": 1,
-		"level" : 7,
+		"levelID" : 7,
+    "difficultID": 3,
 		"question": "Lots of houses_______by the earthquake.",
 		"correctAnswer": "were destroyed",
 		"answer": {
@@ -389,7 +423,8 @@
 		{
 		"id": 36,
 		"typeID": 1,
-		"level" : 8,
+		"levelID" : 8,
+    "difficultID": 1,
 		"question": "- John: You look great in this new hat! \n - Jane: _______",
 		"correctAnswer": "I am glad you like it.",
 		"answer": {
@@ -402,7 +437,8 @@
 		{
 		"id": 37,
 		"typeID": 1,
-		"level" : 9,
+		"levelID" : 9,
+    "difficultID": 2,
 		"question": "- Mai: “ Hello! My name’s Mai. Nice to meet you.” \n-Janed: “_______”",
 		"correctAnswer": "I’m Jane. Nice to meet you, too.",
 		"answer": {
@@ -415,7 +451,8 @@
 		{
 		"id": 39,
 		"typeID": 1,
-		"level" : 10,
+		"levelID" : 10,
+    "difficultID": 3,
 		"question": "I_______Lan since she went abroad.",
 		"correctAnswer": "haven’t met",
 		"answer": {
@@ -428,7 +465,8 @@
 		{
 		"id": 40,
 		"typeID": 1,
-		"level" : 11,
+		"levelID" : 11,
+    "difficultID": 2,
 		"question": "- John: “ How do you get here?” \n - Tam: “_______”",
 		"correctAnswer": "I come here by train.",
 		"answer": {
@@ -441,7 +479,8 @@
 		{
 		"id": 43,
 		"typeID": 1,
-		"level" : 12,
+		"levelID" : 12,
+    "difficultID": 2,
 		"question": [
 			"Employers often require that candidates have not only a degree_______"
 		],
@@ -456,7 +495,8 @@
 		{
 		"id": 44,
 		"typeID": 1,
-		"level" : 3,
+		"levelID" : 3,
+    "difficultID": 1,
 		"question": [
 			"Richard Nixon had been a lawyer and",
 			"_______",
@@ -475,7 +515,8 @@
 		{
 		  "id": 25,
 		  "typeID": 2,
-		  "level" : 1,
+		  "levelID" : 1,
+      "difficultID": 2,
 		  "question": [
 			"He",
 			"_______",
@@ -487,7 +528,8 @@
 		{
 		  "id": 26,
 		  "typeID": 2,
-		  "level" : 2,
+		  "levelID" : 2,
+      "difficultID": 2,
 		  "question": [
 			"They have lived in London",
 			"_______",
@@ -499,7 +541,8 @@
 		{
 		  "id": 27,
 		  "typeID": 2,
-		  "level" : 1,
+		  "levelID" : 1,
+      "difficultID": 3,
 		  "question": [
 			"The fishermen and their boats",
 			"_______",
@@ -511,7 +554,8 @@
 		{
 		  "id": 28,
 		  "typeID": 2,
-		  "level" : 1,
+		  "levelID" : 1,
+      "difficultID": 1,
 		  "question": [
 			"You must put",
 			"_______",
@@ -523,7 +567,8 @@
 		{
 		  "id": 29,
 		  "typeID": 2,
-		  "level" : 4,
+		  "levelID" : 4,
+      "difficultID": 2,
 		  "question": [
 			"Vietnam is a",
 			"_______",
@@ -535,7 +580,8 @@
 		{
 		  "id": 30,
 		  "typeID": 2,
-		  "level" : 3,
+		  "levelID" : 3,
+      "difficultID": 3,
 		  "question": [
 			"A person who work on the farm is a ",
 			"_______",
@@ -547,7 +593,8 @@
 		{
 		  "id": 31,
 		  "typeID": 2,
-		  "level" : 2,
+		  "levelID" : 2,
+      "difficultID": 3,
 		  "question": [
 			"He",
 			"_______",
@@ -559,7 +606,8 @@
 		{
 		  "id": 33,
 		  "typeID": 2,
-		  "level" : 1,
+		  "levelID" : 1,
+      "difficultID": 1,
 		  "question": [
 			"Sometimes it is not",
 			"_______",
@@ -571,7 +619,8 @@
 		{
 		  "id": 34,
 		  "typeID": 2,
-		  "level" : 5,
+		  "levelID" : 5,
+      "difficultID": 1,
 		  "question": [
 			"Do you believe",
 			"_______",
@@ -583,7 +632,8 @@
 		{
 		  "id": 35,
 		  "typeID": 2,
-		  "level" : 1,
+		  "levelID" : 1,
+      "difficultID": 3,
 		  "question": [
 			"They insisted",
 			"_______",
@@ -595,7 +645,8 @@
 		{
 		  "id": 38,
 		  "typeID": 2,
-		  "level" : 3,
+		  "levelID" : 3,
+      "difficultID": 1,
 		  "question": [
 			"If I",
 			"_______",
@@ -607,7 +658,8 @@
 		{
 		  "id": 41,
 		  "typeID": 2,
-		  "level" : 2,
+		  "levelID" : 2,
+      "difficultID": 2,
 		  "question": [
 			"The mausoleum is",
 			"_______",
@@ -619,7 +671,8 @@
 		{
 		  "id": 42,
 		  "typeID": 2,
-		  "level" : 3,
+		  "levelID" : 3,
+      "difficultID": 3,
 		  "question": [
 			"Put plants",
 			"_______",
@@ -633,91 +686,104 @@
 		{
 			"id": 45,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 1,
 			"question": "I had my nephew paint the gate last week.",
 			"correctAnswer": "I had the gate painted last week."
 		},
 		{
 			"id": 46,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 3,
 			"question": "She will have Peter wash her car tomorrow.",
 			"correctAnswer": "She will have her car washed tomorrow."
 		},
 		{
 			"id": 47,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 1,
 			"question": "They have her tell the story again.",
 			"correctAnswer": "They have the story told again."
 		},
 		{
 			"id": 48,
 			"typeID": 4,
-		  	"level" : 3,
+		  "levelID" : 3,
+      "difficultID": 2,
 			"question": "John gets his sister to clean his shirt.",
 			"correctAnswer": "John gets his shirt cleaned."
 		},
 		{
 			"id": 49,
 			"typeID": 4,
-		  	"level" : 2,
+		  "levelID" : 2,
+      "difficultID": 1,
 			"question": "Anne had had a friend type her composition.",
 			"correctAnswer": "Anne has had her composition typed."
 		},
 		{
 			"id": 50,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 3,
 			"question": "Rick will have a barber cut his hair.Rick will have his hair cut.",
 			"correctAnswer": "I will get the dressmaker to make a new dress.I will get a new dress made."
 		},
 		{
 			"id": 51,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 2,
 			"question": "He had a mechanic repair his car.",
 			"correctAnswer": "He had his car repaired."
 		},
 		{
 			"id": 52,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 1,
 			"question": "She often gets the technician to maintain the heater.",
 			"correctAnswer": "She often gets the heater maintained."
 		},
 		{
 			"id": 53,
 			"typeID": 4,
-		  	"level" : 3,
+		  "levelID" : 3,
+      "difficultID": 2,
 			"question": "They had the police arrest the shoplifter.",
 			"correctAnswer": "They had the shoplifter arrested."
 		},
 		{
 			"id": 54,
 			"typeID": 4,
-		  	"level" : 1,
+		  "levelID" : 1,
+      "difficultID": 1,
 			"question": " I must have the dentist check my teeth.",
 			"correctAnswer": "I must have my teeth checked."
 		},
 		{
 			"id": 55,
 			"typeID": 4,
-		  	"level" : 2,
+		  "levelID" : 2,
+      "difficultID": 2,
 			"question": "She will have a veterinary surgeon examine her dog.",
 			"correctAnswer": "She will have her dog examined."
 		},
 		{
 			"id": 56,
 			"typeID": 4,
-		  	"level" : 3,
+		  "levelID" : 3,
+      "difficultID": 3,
 			"question": "We had a man take this photograph when we were on holiday last summer.",
 			"correctAnswer": "We had this photograph taken when we were on holiday last summer."
 		},
 		{
 			"id": 57,
 			"typeID": 4,
-		  	"level" : 2,
+		  "levelID" : 2,
+      "difficultID": 1,
 			"question": "The Greens had a carpet cleaner clean their carpet.",
 			"correctAnswer": "The Greens had their carpet cleaned."
 		}
@@ -726,7 +792,8 @@
 		{
 			"id": 58,
 			"typeID": 3,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 3,
 			"question": ["Never","punish","your children by hitting them. This might teach them to become hitters."],
 			"correctAnswer": "reward",
 			"answer": {
@@ -739,7 +806,8 @@
 		  {
 			"id": 59,
 			"typeID": 3,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 1,
 			"question": ["The first year at university was probably the most","challenging","year of her life, which caused her plenty of troubles."],
 			"correctAnswer": "easy",
 			"answer": {
@@ -752,7 +820,8 @@
 		  {
 			"id": 60,
 			"typeID": 3,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 1,
 			"question": ["In Western culture, it is","polite","to maintain eye contact during conversation."],
 			"correctAnswer": "discourteous",
 			"answer": {
@@ -765,7 +834,8 @@
 		  {
 			"id": 61,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 1,
 			"question": ["There have been","significant","changes in women’s lives since the women’s liberation movement."],
 			"correctAnswer": "unimportant",
 			"answer": {
@@ -778,7 +848,8 @@
 		  {
 			"id": 62,
 			"typeID": 3,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 2,
 			"question": ["Urbanization is the","shift","of people moving from rural to urban areas, and the result is the growth of cities."],
 			"correctAnswer": "maintenance",
 			"answer": {
@@ -791,7 +862,8 @@
 		  {
 			"id": 63,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 3,
 			"question": ["Salish’s point of view was correct but his behavior with his father was quite","impertinent."],
 			"correctAnswer": "respectful",
 			"answer": {
@@ -804,7 +876,8 @@
 		  {
 			"id": 64,
 			"typeID": 3,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 3,
 			"question": ["Telomeres are the tiny caps on the ends of chromosomes that","protect","our DNA from damage during cell division."],
 			"correctAnswer": "attack",
 			"answer": {
@@ -817,7 +890,8 @@
 		  {
 			"id": 65,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 3,
 			"question": ["If you say bad things about the person who give a job you","bite the hand that feeds you."],
 			"correctAnswer": "be thankful",
 			"answer": {
@@ -830,7 +904,8 @@
 		  {
 			"id": 66,
 			"typeID": 3,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 1,
 			"question": ["I prefer","secure","jobs because I don’t like keeping on moving and changing all the time."],
 			"correctAnswer": "challenging",
 			"answer": {
@@ -843,7 +918,8 @@
 		  {
 			"id": 67,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 2,
 			"question": ["When he passes the entrance exam, his parents will","be walking on air."],
 			"correctAnswer": "feeling extremely unhappy",
 			"answer": {
@@ -856,7 +932,8 @@
 		  {
 			"id": 68,
 			"typeID": 3,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 2,
 			"question": ["Pointing at someone is considered","rude","in communication."],
 			"correctAnswer": "polite",
 			"answer": {
@@ -869,7 +946,8 @@
 		  {
 			"id": 69,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 1,
 			"question": ["This point has been dealt with the","preceding","paragraph."],
 			"correctAnswer": "following",
 			"answer": {
@@ -882,7 +960,8 @@
 		  {
 			"id": 70,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 2,
 			"question": ["The employee’s claim of being out with the flu did not seem very","plausible","because he returned from sick leave with a deep tan."],
 			"correctAnswer": "unreasonable",
 			"answer": {
@@ -895,7 +974,8 @@
 		  {
 			"id": 71,
 			"typeID": 3,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 2,
 			"question": ["TEFL.com is a website which offers a job research facility to","assist","qualified students in finding work."],
 			"correctAnswer": "hinder",
 			"answer": {
@@ -908,7 +988,8 @@
 		  {
 			"id": 72,
 			"typeID": 3,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 2,
 			"question": ["Several chapters of Joan Steer’s book describe","illegitimate","gambling activities in California in the 1970s."],
 			"correctAnswer": "lawful",
 			"answer": {
@@ -921,7 +1002,8 @@
 		  {
 			"id": 73,
 			"typeID": 3,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 1,
 			"question": ["We","run a very tight ship","here, and we expect all our employees to be at their desks by eight o’clock and take good care of their own business."],
 			"correctAnswer": "organize things inefficiently",
 			"answer": {
@@ -934,7 +1016,8 @@
 		  {
 			"id": 74,
 			"typeID": 3,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 1,
 			"question": ["The US troops are using much more","sophisticated","weapons in the Far East."],
 			"correctAnswer": "simple",
 			"answer": {
@@ -949,7 +1032,8 @@
 		{
 			"id": 75,
 			"typeID": 5,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 1,
 			"question": "./audio/audio1.mp3",
 			"correctAnswer": {
 				"a": "dai",
@@ -967,7 +1051,8 @@
 		{
 			"id": 78,
 			"typeID": 5,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 3,
 			"question": "./audio/audio1.mp3",
 			"correctAnswer": {
 				"a": "a",
@@ -987,7 +1072,8 @@
 		{
 			"id": 79,
 			"typeID": 6,
-			"level" : 1,
+			"levelID" : 1,
+      "difficultID": 1,
 			"question": "This is a photo of my family. This is my father. He’s 40 years old. He’s a doctor. And this is my mother. She’s 35. She’s a doctor, too. These are my brother, Tom and my sister, Mary. Tom’s 10 and Mary’s 7. They’re pupils.",
 			"correctAnswer": {
 				"a": "There are five people in his family.",
@@ -1013,7 +1099,8 @@
 		{
 			"id": 80,
 			"typeID": 6,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 3,
 			"question": "I live in a house near the sea. It’s an old house, about 100 years old, and it’s very small. There two bedrooms, a livingroom, a bathroom and a kitchen. The bedrooms are upstairs. The bathroom is next to the kitchen. There is a lovely fireplace in the livingroom. There’s a beautiful garden in front of the house. I live with my parents. I play badminton with my father in my free time. We have a lot of fun. I love my house very much.",
 			"correctAnswer": {
 				"a": "His house is near the sea.",
@@ -1039,7 +1126,8 @@
 		{
 			"id": 81,
 			"typeID": 6,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 1,
 			"question": "Lan and Lien are classmates. Lan is thin, but Lien isn’t. Lan is tall and pretty. Lien is short but nice. They are both eleven years old. They are in the same class. They are both good students. They are good friends. They often go to school and play together.",
 			"correctAnswer": {
 				"a": "a",
@@ -1067,7 +1155,8 @@
 		{
 			"id": 82,
 			"typeID": 7,
-			"level" : 2,
+			"levelID" : 1,
+      "difficultID": 1,
 			"question": ["He told me that he","_____","a trip to California the following week"],
 			"correctAnswer": "would take ",
 			"answer": ["will take", "took", "would take", "had taken"]
@@ -1075,7 +1164,8 @@
 		  {
 			"id": 83,
 			"typeID": 7,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 3,
 			"question": ["I couldn’t cut the grass because the lawn mower","______","a few days previously."],
 			"correctAnswer": "had broken down",
 			"answer": ["broke down", "has been broken", "had broken down", "breaks down"]
@@ -1083,7 +1173,8 @@
 		  {
 			"id": 84,
 			"typeID": 7,
-			"level" : 1,
+			"levelID" : 2,
+      "difficultID": 2,
 			"question":["The football match was postponed","______"," the bad weather."],
 			"correctAnswer": "because of",
 			"answer": [
@@ -1096,7 +1187,8 @@
 		  {
 			"id": 85,
 			"typeID": 7,
-			"level" : 2,
+			"levelID" : 2,
+      "difficultID": 1,
 			"question": ["______","students attended the meeting that there weren't enough chairs for all of them."],
 			"correctAnswer": "So many",
 			"answer": [
@@ -1109,7 +1201,8 @@
 		  {
 			"id": 86,
 			"typeID": 7,
-			"level" : 3,
+			"levelID" : 3,
+      "difficultID": 1,
 			"question": ["High school students should be ","______","for their future jobs before leaving school."],
 			"correctAnswer": "well-prepared",
 			"answer": [

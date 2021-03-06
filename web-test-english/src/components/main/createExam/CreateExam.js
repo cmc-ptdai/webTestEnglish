@@ -47,19 +47,20 @@ const CreateExam = () => {
     {name: 'selectasuitableword', label: 'câu hỏi chọn từ', score: 'selectasuitableword'},
   ]
   const level = [
-    {name: 'Lơp 1', value: "1"},
-    {name: 'Lơp 2', value: "2"},
-    {name: 'Lơp 3', value: "3"},
-    {name: 'Lơp 4', value: "4"},
-    {name: 'Lơp 5', value: "5"},
-    {name: 'Lơp 6', value: "6"},
-    {name: 'Lơp 7', value: "7"},
-    {name: 'Lơp 8', value: "8"},
-    {name: 'Lơp 9', value: "9"},
-    {name: 'Lơp 10', value: "10"},
-    {name: 'Lơp 11', value: "11"},
-    {name: 'Lơp 12', value: "12"}
+    {name: 'Lơp 1', value: '1'},
+    {name: 'Lơp 2', value: '2'},
+    {name: 'Lơp 3', value: '3'},
+    {name: 'Lơp 4', value: '4'},
+    {name: 'Lơp 5', value: '5'},
+    {name: 'Lơp 6', value: '6'},
+    {name: 'Lơp 7', value: '7'},
+    {name: 'Lơp 8', value: '8'},
+    {name: 'Lơp 9', value: '9'},
+    {name: 'Lơp 10', value: '10'},
+    {name: 'Lơp 11', value: '11'},
+    {name: 'Lơp 12', value: '12'}
   ]
+  console.log(level);
   const difficult = [
     {name: "Dễ", value: '1'},
     {name: "Trung bình", value: '2'},

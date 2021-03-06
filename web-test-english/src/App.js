@@ -5,12 +5,12 @@ import { Provider } from 'react-redux'
 import store from './redux/store'
 import {
   BrowserRouter as Router,
-  Switch,
-  Route
+  // Switch,
+  // Route
 } from "react-router-dom"
 import Home from './components/home'
-import Login from './components/login/index'
-import Admin from './components/admin'
+// import Login from './components/login/index'
+// import Admin from './components/admin'
 import Header from './components/header/index'
 import Footer from './components/footer/Footer';
 
